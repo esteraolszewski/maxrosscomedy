@@ -6,6 +6,18 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+
+/* * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+} */
+
+
 .wrapper {
     max-width: 1280px;
     width: 90%;
@@ -17,20 +29,24 @@ img {
     display: block;
 }
 
-.navBar {
-    position: relative;
-    z-index: 4;
-    height: 0;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 30px;
-    list-style-type: none;
-    font-size: 20px;
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 1s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(245, 245, 245, 0.767);
     color: black;
+    list-style: none;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 a:link,
@@ -40,6 +56,31 @@ a:active {
     text-decoration: none; 
     font-family: 'Red Hat Display', sans-serif;
     color: inherit;
+    font-size: 40px;
+}
+
+a:hover {
+    color:#E27831;
+    transition: all ease-out 1s;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.closeIcon {
+    display: none;
 }
 
 h1 {
@@ -128,7 +169,7 @@ p {
     font-size: 18px;
 }
 
-button {
+.showButton {
     font-family: 'Red Hat Display', sans-serif;
     text-transform: uppercase;
     border: none;
@@ -137,7 +178,7 @@ button {
     margin-top: 15px;
 }
 
-button:hover {
+.showButton:hover {
     background-color:#E27831;
     transition: all ease-out 1s;
 }

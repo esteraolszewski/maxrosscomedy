@@ -19,14 +19,18 @@
 <body>
     <!-- NAV BAR -->
     <nav>
-        <div class="wrapper navBar">
-            <!-- <h1>Max Ross</h1> -->
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Shows</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="#">Contact</a></li>
+        <div class="wrapper">
+            <ul class="menu">
+                <li><a class="menuItem" href="./index.html">Home</a></li>
+                <li><a class="menuItem" href="#">Shows</a></li>
+                <li><a class="menuItem" href="./about.html">About</a></li>
+                <li><a class="menuItem" href="#">Contact</a></li>
             </ul>
+
+            <button class="hamburger">
+                <i class="menuIcon fa-solid fa-bars fa-2x"></i>
+                <i class="closeIcon fa-regular fa-circle-xmark fa-2x"></i>
+            </button>
         </div>
     </nav>
     <!-- HEADER -->
@@ -56,5 +60,8 @@
             <p>Copyright © 2023</p>
         </div>
     </footer>
+
+    <script src="./index.js"></script>
+
 </body>
 </html>
