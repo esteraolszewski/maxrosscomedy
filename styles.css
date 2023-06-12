@@ -7,7 +7,7 @@ html { box-sizing: border-box;}
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,7 +15,7 @@ html { box-sizing: border-box;}
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-} */
+}
 
 
 .wrapper {
@@ -84,7 +84,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 8em;
+    font-size: clamp(2.5rem, 1.1045rem + 6.5672vw, 8rem);
     color: #E27831;
     text-shadow: 2px 2px #000000;
     font-family: 'CaslonCPswash', sans-serif;
@@ -97,18 +97,12 @@ h1 {
     z-index: 2;
 }
 
-/* h1::first-letter {
-    font-size: 15rem;
-} */
-
 .head {
     display: flex;
     flex-wrap: wrap;
 }
 
 .mainImage {
-    min-height: 100%;
-    min-width: 1024px;
     width: 70%;
     height: 100vh;
     object-fit: cover;
@@ -122,12 +116,6 @@ h1 {
     padding-left: 50px;
 }
 
-/* h2 {
-    font-size: 60px;
-    font-family: 'Red Hat Display', sans-serif;
-    color: black;
-} */
-
 main {
     
 }
@@ -136,7 +124,7 @@ h3 {
     font-size: 30px;
     font-family: 'Comme', sans-serif;
     color: black;
-
+    margin: 20px;
 }
 
 .shows {
@@ -152,6 +140,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     border: 4px solid black;
     border-radius: 50px;
     padding: 40px;
@@ -161,6 +150,7 @@ h4 {
     font-family: 'Comme', sans-serif;
     color: black;
     font-size: 20px;
+    margin: 20px;
 }
 
 p {
@@ -188,6 +178,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 40px;
 }
 
 video {
@@ -207,7 +198,7 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: 80px;
 }
 
 .icons {
@@ -217,5 +208,6 @@ video {
 
 footer {
     text-align: center;
+    margin-top: 40px;
 }
 
