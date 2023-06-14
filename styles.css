@@ -121,10 +121,11 @@ main {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: clamp(2rem, 0.4776rem + 7.1642vw, 8rem);
     font-family: 'Comme', sans-serif;
     color: black;
-    margin: 20px;
+    margin: 80px;
+    text-align: center;
 }
 
 .shows {
@@ -135,13 +136,12 @@ h3 {
 }
 
 .showOne {
-    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border: 4px solid black;
+    border: 2px solid black;
     border-radius: 50px;
     padding: 40px;
 }
@@ -209,5 +209,22 @@ video {
 footer {
     text-align: center;
     margin-top: 40px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1440px) {
+    h1 {
+        bottom: 0;
+        right: 230px;
+
+    }
+}
+
+@media (max-width: 1125px) {
+    h1 {
+        line-height: 70px;
+
+    }
 }
 
