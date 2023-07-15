@@ -91,10 +91,6 @@ h1 {
     text-transform: uppercase;
     line-height: 135px;
     text-indent: 30px;
-    position: relative;
-    bottom: 65px;
-    right: 1035px;
-    z-index: 2;
 }
 
 .head {
@@ -141,9 +137,9 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border: 2px solid black;
-    border-radius: 50px;
+    border-bottom: 2px solid black;
     padding: 40px;
+    width: 30rem;
 }
 
 h4 {
@@ -215,8 +211,7 @@ footer {
 
 @media (max-width: 1440px) {
     h1 {
-        bottom: 0;
-        right: 230px;
+        
 
     }
 }
