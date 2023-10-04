@@ -142,6 +142,11 @@ h3 {
     width: 30rem;
 }
 
+.mediaSection {
+    display: flex;
+    justify-content: center;
+}
+
 h4 {
     font-family: 'Comme', sans-serif;
     color: black;
@@ -195,6 +200,10 @@ video {
     flex-wrap: wrap;
     justify-content: center;
     gap: 80px;
+}
+
+.socialsGroup {
+    display: flex;
 }
 
 .icons {
