@@ -84,18 +84,17 @@ a:hover {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 1.1045rem + 6.5672vw, 8rem);
+    font-size: clamp(2.5rem, 1.1045rem + 7.5672vw, 8rem);
     color: #E27831;
     text-shadow: 2px 2px #000000;
     font-family: 'CaslonCPswash', sans-serif;
     text-transform: uppercase;
-    line-height: 135px;
-    text-indent: 30px;
 }
 
 .head {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .mainImage {
@@ -109,11 +108,11 @@ h1 {
     width: 30%;
     display: flex;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 main {
-    
+    margin-bottom: 100px;
 }
 
 h3 {
@@ -145,6 +144,7 @@ h3 {
 .mediaSection {
     display: flex;
     justify-content: center;
+    margin-top: 90px;
 }
 
 h4 {
@@ -199,11 +199,14 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 80px;
+    margin-top: 90px;
 }
 
 .socialsGroup {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 130px;
 }
 
 .icons {
@@ -218,17 +221,43 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1440px) {
-    h1 {
-        
+@media (max-width: 1220px) {
+    .title {
+        padding-left: 30px;
 
     }
 }
 
-@media (max-width: 1125px) {
-    h1 {
-        line-height: 70px;
+@media (max-width: 1000px) {
+    .title {
+        padding-left: 20px;
 
     }
 }
 
+@media (max-width: 860px) {
+    .title {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 730px) {
+    h1 {
+        writing-mode: sideways-rl;
+    }
+}
+
+/* ABOUT STYLES */
+
+h2 {
+    font-size: clamp(2.5rem, 1.25rem + 4.1667vw, 5.625rem);
+    font-family: 'CaslonCPswash', sans-serif;
+
+}
+
+.titleAbout {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
