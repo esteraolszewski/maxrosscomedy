@@ -158,7 +158,8 @@ h4 {
 }
 
 p {
-    font-family: 'Comme', sans-serif;
+    /* font-family: 'Comme', sans-serif; */
+    font-family: 'Radley', serif;
     color: black;
     font-size: 18px;
 }
@@ -224,7 +225,23 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1230px) {
+    main {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 980px) {
+    main {
+        margin-top: 400px;
+    }
+}
+
 @media (max-width: 730px) {
+    main {
+        margin-top: 200px;
+    }
+    
     .title {
         display: flex;
         justify-content: flex-start;
@@ -236,17 +253,47 @@ footer {
     }
 }
 
-/* ABOUT STYLES */
-
-h2 {
-    font-size: clamp(2.5rem, 1.25rem + 4.1667vw, 5.625rem);
-    font-family: 'CaslonCPswash', sans-serif;
-
+@media (max-width: 615px) {
+    main {
+        margin-top: 300px;
+    }
 }
 
-.titleAbout {
-    width: 30%;
+@media (max-width: 500px) {
+    main {
+        margin-top: 400px;
+    }
+}
+
+/* ABOUT STYLES */
+
+.flexAbout {
     display: flex;
-    align-items: center;
-    padding-left: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+.headAbout {
+    width: 50%;
+}
+
+.mainImageAbout {
+    height: 100vh;
+    object-fit: cover;
+    width: 100vw;
+}
+
+.aboutP {
+    width: 45%;
+}
+
+.para {
+    width: 80%;
+}
+
+.paraA {
+    font-size: clamp(0.9375rem, 0.6875rem + 0.8333vw, 1.5625rem);
+    font-family: 'Radley', serif;
 }
