@@ -84,11 +84,13 @@ a:hover {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 1.1045rem + 7.5672vw, 8rem);
+    font-size: clamp(3.125rem, -0.625rem + 12.5vw, 12.5rem);
     color: #E27831;
     text-shadow: 2px 2px #000000;
     font-family: 'CaslonCPswash', sans-serif;
     text-transform: uppercase;
+    position: relative;
+    margin-top: 25%;
 }
 
 .head {
@@ -98,21 +100,22 @@ h1 {
 }
 
 .mainImage {
-    width: 70%;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
     object-position: 50% 8%;
+    position: absolute;
 }
 
 .title {
-    width: 30%;
     display: flex;
-    align-items: center;
-    padding-left: 40px;
+    justify-content: center;
 }
 
 main {
     margin-bottom: 100px;
+    margin-top: 200px;
+    position: relative;
 }
 
 h3 {
@@ -221,29 +224,15 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1220px) {
-    .title {
-        padding-left: 30px;
-
-    }
-}
-
-@media (max-width: 1000px) {
-    .title {
-        padding-left: 20px;
-
-    }
-}
-
-@media (max-width: 860px) {
-    .title {
-        padding-left: 10px;
-    }
-}
-
 @media (max-width: 730px) {
+    .title {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
     h1 {
         writing-mode: sideways-rl;
+        margin-top: 10%;
     }
 }
 
