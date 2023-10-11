@@ -265,6 +265,12 @@ footer {
     }
 }
 
+@media (max-width: 320px) {
+    main {
+        margin-top: 500px;
+    }
+}
+
 /* ABOUT STYLES */
 
 .flexAbout {
@@ -309,6 +315,6 @@ footer {
 
 @media (max-width: 500px) {
     .aboutP {
-        margin-top: 100px;
+        margin-top: 150px;
     }
 }
