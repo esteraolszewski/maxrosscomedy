@@ -297,3 +297,18 @@ footer {
     font-size: clamp(0.9375rem, 0.6875rem + 0.8333vw, 1.5625rem);
     font-family: 'Radley', serif;
 }
+
+
+/* ABOUT MEDIA QUERIES */
+
+@media (max-width: 1190px) {
+    .aboutP {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .aboutP {
+        margin-top: 100px;
+    }
+}
