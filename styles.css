@@ -257,17 +257,29 @@ footer {
     main {
         margin-top: 300px;
     }
+    h1 {
+        writing-mode: sideways-rl;
+        margin-top: 10%;
+    }
 }
 
 @media (max-width: 500px) {
     main {
         margin-top: 400px;
     }
+    h1 {
+        writing-mode: sideways-rl;
+        margin-top: 10%;
+    }
 }
 
 @media (max-width: 320px) {
     main {
         margin-top: 500px;
+    }
+    h1 {
+        writing-mode: sideways-rl;
+        margin-top: 10%;
     }
 }
 
