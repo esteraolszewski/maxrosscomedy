@@ -263,7 +263,7 @@ footer {
     }
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
     main {
         margin-top: 400px;
     }
@@ -273,7 +273,7 @@ footer {
     }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
     main {
         margin-top: 500px;
     }
